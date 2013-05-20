@@ -1,0 +1,11 @@
+%% This is the application resource file (.app file) for the,
+%% application.
+{application, cloudfiles,
+  [{description, "Rackspace Cloud Files in Erlang"},
+   {vsn, "0.0.1"},
+   {modules, [cloudfiles_app,
+              cloudfiles_sup]},
+   {registered,[cloudfiles_sup]},
+   {applications, [kernel, stdlib]},
+   {mod, {cloudfiles_app,[]}},
+   {start_phases, []}]}.
